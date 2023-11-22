@@ -48,7 +48,7 @@ export default function App() {
       <View style={styles.gallery_wrapper}>
         {galleryPictures.map(item => (
           <View key={item.id} style={styles.item_wrapper}>
-            <CachedNetworkImage style={styles.image} source={item.url} />
+            <CachedNetworkImage style={styles.image} url={item.url} />
             <View style={styles.title_wrapper}>
               <Text style={styles.title}>{item.title}</Text>
             </View>
